@@ -1,4 +1,4 @@
-# JSPM build failure when `nodemodules` provider is used
+# JSPM build failure when the `nodemodules` provider is used
 
 ## Steps to reproduce
 
