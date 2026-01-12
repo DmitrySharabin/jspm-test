@@ -32,16 +32,16 @@ if (pkg.dependencies) {
 // Output the import map:
 console.log(JSON.stringify(generator.getMap(), null, 2));
 
-function installPackage (generator, name, target) {
+async function installPackage (generator, name, target) {
 	try {
-		return generator.install({
+		return await generator.install({
 			alias: name,
 			target: target,
 			subpaths: true,
 		});
 	} catch (error) {
 		try {
-			return generator.install({
+			return await generator.install({
 				alias: name,
 				target: target,
 				subpaths: false,
