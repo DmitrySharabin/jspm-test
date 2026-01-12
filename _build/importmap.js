@@ -20,12 +20,16 @@ if (!pkg) {
 }
 
 // Install from a local package:
-
 await installPackage(generator, pkg.name, './');
 
 if (pkg.dependencies) {
 	for (const dep in pkg.dependencies) {
-		await installPackage(generator, dep, `./node_modules/${dep}`);
+		// --- Option 1 ---
+		// await installPackage(generator, dep, `./node_modules/${dep}`);
+
+		// --- Option 2 (gives different import map!) ---
+		// With nodemodules provider, use package name, not path
+		await installPackage(generator, dep, dep);
 	}
 }
 
