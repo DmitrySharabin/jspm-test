@@ -15,7 +15,15 @@
   },
   "scopes": {
     "./": {
+      "@floating-ui/core": "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
+      "@floating-ui/dom": "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs",
       "lit/html.js": "./node_modules/lit/html.js"
+    },
+    "./node_modules/@floating-ui/core/": {
+      "@floating-ui/utils": "./node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs"
+    },
+    "./node_modules/@floating-ui/dom/": {
+      "@floating-ui/core": "./node_modules/@floating-ui/dom/node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs"
     },
     "./node_modules/lit/": {
       "lit-html": "./node_modules/lit-html/development/lit-html.js"
