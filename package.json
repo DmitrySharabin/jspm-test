@@ -6,8 +6,7 @@
 	"scripts": {
 		"serve": "npx jspm serve -p nodemodules",
 		"build": "npx jspm build -p nodemodules",
-		"importmap-build": "npx jspm install -p nodemodules",
-		"dependencies": "npm run importmap-build"
+		"dependencies": "npx nudeps"
 	},
 	"exports": {
 		".": "./src/index.js"
