@@ -1,6 +1,7 @@
-import { html, render } from "lit/html.js";
-import { autoPlacement } from "@floating-ui/dom";
-import { shift } from "@floating-ui/core";
+import jquery3 from "jquery3";
+import jquery4 from "jquery4";
 
-const template = html`<p>Hello from JSPM Lit HTML!</p>`;
-render(template, document.body);
+const $legacy = jquery3.noConflict(true);
+const $ = jquery4.noConflict(true);
+
+$("#count").text($legacy("#list > li").length);

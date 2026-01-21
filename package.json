@@ -5,19 +5,16 @@
 	"type": "module",
 	"scripts": {
 		"serve": "npx jspm serve -p nodemodules",
-		"build": "npx jspm build -p nodemodules",
-		"dependencies": "npx nudeps"
+		"build": "npx jspm build -p nodemodules"
 	},
 	"exports": {
 		".": "./src/index.js"
 	},
-	"dependencies": {
-		"@floating-ui/core": "^1.7.3",
-		"@floating-ui/dom": "^0.5.4",
-		"lit": "^3.3.2",
-		"vue": "^3.5.26"
-	},
 	"devDependencies": {
 		"jspm": "^4.2.0"
+	},
+	"dependencies": {
+		"jquery3": "npm:jquery@^3.7.1",
+		"jquery4": "npm:jquery@^4.0.0"
 	}
 }

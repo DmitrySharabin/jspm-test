@@ -1,18 +1,29 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JSPM nodemodules Provider</title>
-		<script src="importmap.js"></script>
-		<script
-			async
-			crossorigin="anonymous"
-			src="https://ga.jspm.io/npm:es-module-shims@2.8.0/dist/es-module-shims.js"
-		></script>
-		<script type="module">
-			import "jspm-test";
-		</script>
-	</head>
-	<body></body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JSPM nodemodules Provider</title>
+	<script async crossorigin="anonymous"
+		src="https://ga.jspm.io/npm:es-module-shims@2.8.0/dist/es-module-shims.js"></script>
+	<script src="importmap.js"></script>
+	<script type="module">
+		import "jspm-test";
+	</script>
+</head>
+
+<body>
+	<h2>List (<span id="count">0</span>)</h2>
+	<ul id="list">
+		<li>Vue</li>
+		<li>React</li>
+		<li>Lit</li>
+		<li>Floating UI</li>
+		<li>underscore</li>
+		<li>lodash</li>
+		<li>jQuery</li>
+	</ul>
+</body>
+
 </html>
